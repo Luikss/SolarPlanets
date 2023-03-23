@@ -1,4 +1,5 @@
 ﻿#if WINDOWS
+using Microsoft.Maui.Handlers;
 using Microsoft.UI;
 using Microsoft.UI.Windowing;
 using Windows.Graphics;
@@ -17,7 +18,7 @@ public partial class App : Application
 		InitializeComponent();
 
 #if WINDOWS
-		Microsoft.Maui.Handlers.WindowHandler.Mapper.AppendToMapping(nameof(IWindow), (handler, view) =>
+		WindowHandler.Mapper.AppendToMapping(nameof(IWindow), (handler, view) =>
 		{
             var mauiWindow = handler.VirtualView;
 			var nativeWindow = handler.PlatformView;
@@ -29,6 +30,6 @@ public partial class App : Application
         });
 #endif
 
-		MainPage = new AppShell();
+		MainPage = new NavigationPage(new StartPage());
 	}
 }
