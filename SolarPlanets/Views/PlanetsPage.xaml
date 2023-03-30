@@ -3,10 +3,116 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Views.PlanetsPage"
              Title="PlanetsPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+    <Grid>
+
+        <Grid
+            x:Name="MenuContainer">
+
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#666666" Offset="0.0" />
+                    <GradientStop Color="#000000" Offset="1.0" />
+                </LinearGradientBrush>
+            </Grid.Background>
+
+            <VerticalStackLayout
+                Margin="0,52,24,0"
+                HorizontalOptions="End"
+                Spacing="20">
+
+                <Label                
+                    Text="MENU"
+                    Style="{StaticResource PageHeaderStyle}"
+                    HorizontalOptions="End"/>
+
+                <Label                
+                    Text="Option 1 (with icon)"
+                    Style="{StaticResource PageHeaderSubtitleStyle}"
+                    HorizontalOptions="End" />
+
+                <Label                
+                    Text="Option 2 (with icon)"
+                    Style="{StaticResource PageHeaderSubtitleStyle}"
+                    HorizontalOptions="End" />
+
+                <Label                
+                    Text="Option 3 (with icon)"
+                    Style="{StaticResource PageHeaderSubtitleStyle}"
+                    HorizontalOptions="End" />
+
+                <Label                
+                    Text="Option 4 (with icon)"
+                    Style="{StaticResource PageHeaderSubtitleStyle}"
+                    HorizontalOptions="End" />
+
+                <Label                
+                    Text="Option 5 (with icon)"
+                    Style="{StaticResource PageHeaderSubtitleStyle}"
+                    HorizontalOptions="End" />
+
+                <Label                
+                    Text="Option 6 (with icon)"
+                    Style="{StaticResource PageHeaderSubtitleStyle}"
+                    HorizontalOptions="End" />
+
+            </VerticalStackLayout>
+        </Grid>
+
+        <Grid
+            x:Name="MainContentGrid"
+            Padding="24,52,24,0"
+            BackgroundColor="{StaticResource PageBackgroundColor}"
+            ColumnDefinitions="*,Auto"
+            RowDefinitions="Auto,*">
+
+            <VerticalStackLayout
+                Spacing="4"
+                Grid.Row="0"
+                Grid.Column="0"
+                VerticalOptions="Center">
+
+                <Label
+                    Style="{StaticResource PageHeaderStyle}"
+                    Text="Let's Explore" />
+
+                <Label
+                    Style="{StaticResource PageHeaderSubtitleStyle}"
+                    Text="The solar system" />
+
+            </VerticalStackLayout>
+
+            <Border
+                WidthRequest="112"
+                HeightRequest="112"
+                VerticalOptions="Center"
+                HorizontalOptions="End"
+                Stroke="{StaticResource LightBorderColor}"
+                StrokeThickness="6"
+                Grid.Row="0"
+                Grid.Column="1">
+
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="56" />
+                </Border.StrokeShape>
+
+                <Image
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    WidthRequest="130"
+                    HeightRequest="130"
+                    Source="profile.jpg">
+                    <Image.Clip>
+                        <EllipseGeometry
+                            Center="50,50"
+                            RadiusX="50"
+                            RadiusY="50" />
+                    </Image.Clip>
+                </Image>
+
+            </Border>
+
+        </Grid>
+
+    </Grid>
 </ContentPage>
