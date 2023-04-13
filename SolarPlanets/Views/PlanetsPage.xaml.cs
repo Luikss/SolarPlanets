@@ -19,7 +19,7 @@ public partial class PlanetsPage : ContentPage
 
     async void Planets_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
-
+        await Navigation.PushAsync(new PlanetDetailsPage(e.CurrentSelection.First() as Planet));
     }
 
     async void ProfilePic_Clicked(object sender, EventArgs e)
