@@ -1,4 +1,6 @@
-﻿namespace Services
+﻿using System.Drawing;
+
+namespace Services
 {
     internal static class PlanetsService
     {
@@ -129,11 +131,11 @@
             new()
             {
                 Name = " Pluto",
-                Subtitle = "",
-                HeroImage = "",
+                Subtitle = "   The Frozen World",
+                HeroImage = "pluto.png",
                 Description = "Pluto is a complex world of ice mountains and frozen plains. Once considered the ninth planet, Pluto is the best known of a new class of worlds called dwarf planets.",
-                AccentColorStart = Color.FromArgb("#0c293d"),
-                AccentColorEnd = Color.FromArgb("#26abe0"),
+                AccentColorStart = Color.FromArgb("#00008B"),
+                AccentColorEnd = Color.FromArgb("#000000"),
                 Images = new()
                 {
                     "https://solarsystem.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc3dGIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--1bb4e43c4ffeb97994ee48daf607bce47f0feb77/BIG_P_COLOR_2_TRUE_COLOR1_1980.jpg",
@@ -144,16 +146,61 @@
             new()
             {
                 Name = " Ceres",
-                Subtitle = "",
-                HeroImage = "",
+                Subtitle = "   The Rocky Asteroid",
+                HeroImage = "ceres.png",
                 Description = "Ceres makes up almost a third of the asteroid belt's total mass, but it is still far smaller than Earth's Moon. Ceres is heavily cratered with large amounts of ice underground.",
-                AccentColorStart = Color.FromArgb("#0c293d"),
-                AccentColorEnd = Color.FromArgb("#26abe0"),
+                AccentColorStart = Color.FromArgb("#D3D3D3"),
+                AccentColorEnd = Color.FromArgb("#696969"),
                 Images = new()
                 {
                     "https://solarsystem.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdEFHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7703bedd2b3f6bdc3620d2f14f2028a6a1c4a101/PIA22660_hires.jpg",
                     "https://solarsystem.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBc0FHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--e96b10366d38fc63f0ad9aa1d3c96100710f5150/PIA22761_hires.jpg",
                     "https://solarsystem.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdFlHIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--7a2a1208ab2f29f1bd20ea56db2f40511dcc9874/PIA22642_hires.jpg"
+                }
+            },
+            new()
+            {
+                Name = " Makemake",
+                Subtitle = "   The Distant Sphere",
+                HeroImage = "makemake.png",
+                Description = "Along with fellow dwarf planets Pluto, Eris, and Haumea, Makemake is located in the Kuiper Belt, a donut-shaped region of icy bodies beyond the orbit of Neptune.",
+                AccentColorStart = Color.FromArgb("#ADD8E6"),
+                AccentColorEnd = Color.FromArgb("#9370DB"),
+                Images = new()
+                {
+                    "https://cdn.mos.cms.futurecdn.net/8QBGiy9BhmttKdGeAAZpn8-320-80.jpg",
+                    "https://www.universetoday.com/wp-content/uploads/2008/07/Makemake-1280x720.jpg",
+                    "https://solarsystem.nasa.gov/system/stellar_items/image_files/705_feature_1600x900_makemake.jpg"
+                }
+            },
+            new()
+            {
+                Name = " Haumea",
+                Subtitle = "   The Elongated Object",
+                HeroImage = "haumea.png",
+                Description = "Originally designated 2003 EL61 (and nicknamed Santa by one discovery team), Haumea is located in the Kuiper Belt, a donut-shaped region of icy bodies beyond the orbit of Neptune.",
+                AccentColorStart = Color.FromArgb("#D2B48C"),
+                AccentColorEnd = Color.FromArgb("#8B4513"),
+                Images = new()
+                {
+                    "https://cdn.britannica.com/66/137066-004-13F11781/rendering-Artist-moons-Haumea.jpg",
+                    "https://solarsystem.nasa.gov/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ1lSIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--75ac289f8ffa148b3f12097ebadc2291782633a2/haumea_th.jpg",
+                    "https://static.wikia.nocookie.net/expanse/images/1/1f/Haumea_in_Celestia.jpg/revision/latest?cb=20200206143331"
+                }
+            },
+            new()
+            {
+                Name = " Eris",
+                Subtitle = "   The Massive Plutoid",
+                HeroImage = "eris.png",
+                Description = "Eris is one of the largest known dwarf planets in our solar system. It's about the same size as Pluto, but it is three times farther from the Sun. One orbit takes about 557 years.",
+                AccentColorStart = Color.FromArgb("#4B0082"),
+                AccentColorEnd = Color.FromArgb("#8B0000"),
+                Images = new()
+                {
+                    "https://cdn.eso.org/images/screen/eso1142a.jpg",
+                    "https://theplanets.org/123/2021/10/Eris-Facts.png",
+                    "https://www.tornado-studios.com/sites/default/files/styles/slider_full/public/products/498/gallery/eris_thumbnail_square0000.jpg"
                 }
             }
         };
